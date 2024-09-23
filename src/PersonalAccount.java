@@ -18,7 +18,7 @@ public class PersonalAccount {
         }
         this.balance +=amount;
         transactions[transactionCount++]= new Amount(amount, TransactionType.DEPOSIT);
-        System.out.println("deposited:"+amount);
+        //System.out.println("deposited:"+amount);
     }
     public void withdrawal(double amount){
         if (amount>this.balance){
@@ -26,7 +26,7 @@ public class PersonalAccount {
         }
         this.balance -=amount;
         transactions[transactionCount++]= new Amount(amount, TransactionType.WITHDRAWAL);
-        System.out.println("withdrew:"+amount);
+        //System.out.println("withdrew:"+amount);
     }
     public void printHistory(){
         System.out.println("Transaction history for account:"+accountNumber + ":");
